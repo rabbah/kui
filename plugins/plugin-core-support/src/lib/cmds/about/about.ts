@@ -167,7 +167,7 @@ const aboutWindow = async () => {
 
   const modes: SidecarMode[] = [
     { mode: 'tutorials', label: 'Tutorials', flush: 'right', direct: settings.gettingStarted || 'getting started' },
-    { mode: 'bugs', label: 'Bugs', flush: 'right', url: bugs.url },
+    { mode: 'bugs', label: 'Bugs', flush: 'right', url: bugs ? bugs.url : undefined },
     { mode: 'github', label: 'GitHub', flush: 'right', url: homepage }
   ]
 
